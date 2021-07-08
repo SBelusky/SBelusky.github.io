@@ -9827,6 +9827,14 @@ body {
 .flickity-slider {
   left: 10px !important;
 }
+.add-padding {
+  padding: 34.4px 24px 34.4px 24px;
+}
+@media only screen and (max-width: 600px) {
+  .qoute {
+    font-size: 0.8em;
+  }
+}
 /* Added animations */
 @keyframes slideInFromLeft {
   0% {
