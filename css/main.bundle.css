@@ -9838,6 +9838,9 @@ body {
   .qoute-p {
     line-height: 0.9em !important;
   }
+  .flickity-slider {
+    left: 0px !important;
+  }
 }
 /* Added animations */
 @keyframes slideInFromLeft {
