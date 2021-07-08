@@ -5,38 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.bundle.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
   </head>
-  <!-- LiveReload-->
-  <script>
-    document.write(
-      '<script src="http://' +
-        (location.host || "localhost").split(":")[0] +
-        ':35729/livereload.js?snipver=1"></' +
-        "script>"
-    );
-  </script>
-  <!-- #LiveReload-->
   <body class="main-section">
-    <section class="hero ">    
-      <nav
-      class="navbar "
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <div class="navbar-item is-hidden-desktop">
-          <a
-            href="https://github.com/SBelusky"
-            class="icon is-large has-text-light"
-          >
-            <i class="fab fa-2x fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <div class="navbar-item">
+    <section class="hero">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <div class="navbar-item is-hidden-desktop">
             <a
               href="https://github.com/SBelusky"
               class="icon is-large has-text-light"
@@ -45,8 +21,19 @@
             </a>
           </div>
         </div>
-      </div>
-    </nav>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a
+                href="https://github.com/SBelusky"
+                class="icon is-large has-text-light"
+              >
+                <i class="fab fa-2x fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
       <div class="hero-body">
         <div class="container load-animation">
           <div class="level">
@@ -139,7 +126,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section animonItem" data-effect="fadeInLeft">
       <div class="container">
         <h1 class="title">Projects</h1>
         <hr />
@@ -299,14 +286,16 @@
       </div>
     </section>
     <section class="section"></section>
+
+    <section class="section">
       <div class="container add-padding mb-6">
         <h1 class="title">Contact</h1>
         <hr />
         <nav class="level">
           <div class="level-item has-text-centered" data-aos="fade-left">
             <div class="contact-icon">
-              <a href="https://github.com/SBelusky" class="icon is-large ">
-                <i class="fab fa-2x fa-github "></i>
+              <a href="https://github.com/SBelusky" class="icon is-large">
+                <i class="fab fa-2x fa-github"></i>
               </a>
               <p class="heading">
                 <a href="https://github.com/SBelusky">github.com/SBelusky</a>
@@ -336,7 +325,8 @@
               <p class="heading">
                 <a
                   href="https://www.linkedin.com/in/samuel-belusk%C3%BD-642812214/"
-                  > linkedin</a
+                >
+                  linkedin</a
                 >
               </p>
             </div>
@@ -565,27 +555,32 @@
             <figure class="image carousel-cell">
               <img src="img/chatbook/main.png" />
             </figure>
-              <figure class="image carousel-cell">
-                <img src="img/chatbook/new-con.png" />
-              </figure>
+            <figure class="image carousel-cell">
+              <img src="img/chatbook/new-con.png" />
+            </figure>
           </div>
-             <br />
+          <br />
         </section>
       </div>
     </div>
 
     <footer class="footer">
       <div class="content has-text-centered has-text-white">
-        <strong class="has-text-white">&copy; Copyright <span id="year"></span></strong>
+        <strong class="has-text-white"
+          >&copy; Copyright <span id="year"></span
+        ></strong>
       </div>
     </footer>
 
     <script src="js/bundle.js"></script>
     <script src="js/addedScripts.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script>
       AOS.init();
+      $("[data-reveal]").on("closeme.zf.reveal", function () {
+        $("#targetedID *").removeClass("aos-animate");
+      });
     </script>
   </body>
 </html>
