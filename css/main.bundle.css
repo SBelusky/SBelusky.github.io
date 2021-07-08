@@ -9830,7 +9830,7 @@ body {
 .add-padding {
   padding: 34.4px 24px 34.4px 24px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .qoute {
     font-size: 0.6em;
   }
