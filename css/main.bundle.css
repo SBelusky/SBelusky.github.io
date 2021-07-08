@@ -9832,7 +9832,10 @@ body {
 }
 @media only screen and (max-width: 600px) {
   .qoute {
-    font-size: 0.8em;
+    font-size: 0.6em;
+  }
+  .qoute-p {
+    line-height: 0.9em !important;
   }
 }
 /* Added animations */
